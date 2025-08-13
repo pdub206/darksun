@@ -11,9 +11,10 @@ creation commands.
 from evennia.objects.objects import DefaultCharacter
 
 from .objects import ObjectParent
+from src.characters import EvAdventureCharacter
 
 
-class Character(ObjectParent, DefaultCharacter):
+class Character(ObjectParent, EvAdventureCharacter):
     """
     The Character just re-implements some of the Object's methods and hooks
     to represent a Character entity in-game.
